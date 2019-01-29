@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 36 - var, let y const: las diferencias entre ellos</title>
+</head>
+<body>
+  <script>
+      var sacha = {
+        nombre: 'Sacha',
+        apellido: 'Lifszyc',
+        edad: 28
+      }
+
+      function esMayorDeEdad(persona){
+        let mensaje
+        if(persona.edad > 18){
+            mensaje = 'Es mayor de edad'
+        }else{
+            mensaje = 'Es menor de edad'
+        }
+
+        console.log(mensaje)
+      }
+
+      // esMayorDeEdad(sacha)
+
+      for(let i = 0; i < 10; i++){
+        console.log(i)
+      }
+      // Si declarara la variable i con var podriá acceder a ella desde afuera del for
+
+      console.log(`Terminó el for, el valor de i es ${i}`)
+
+  </script>  
+</body>
+</html>
